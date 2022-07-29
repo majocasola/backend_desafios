@@ -1,0 +1,27 @@
+[
+  {
+    "titulo": "Halo",
+    "thumbnail": "halo.com",
+    "precio": 100 
+  },
+  {
+    "titulo": "COD",
+    "thumbnail": "cod.com",
+    "precio": 120 
+  },
+  {
+    "titulo": "FFXXI",
+    "thumbnail": "ffxxi.com",
+    "precio": 90 
+  },
+  {
+    "titulo": "Spyro",
+    "thumbnail": "spyro.com",
+    "precio": 150 
+  },
+  {
+    "titulo": "Castlevania",
+    "thumbnail": "castlevania.com",
+    "precio": 130 
+  }
+]

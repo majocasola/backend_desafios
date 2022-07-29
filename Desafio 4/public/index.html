@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Subir Archivo</title>
+  <style>
+    h1 {
+      color: black;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    input {
+      float: left;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    form {
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    form .submit {
+      background-color: lightblue;
+    }
+
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Productos</h1>
+  <form action="/api/productos" enctype="multipart/form-data" method="POST">
+    <input type="text" name="titulo" id="titulo" placeholder="Titulo">
+    <input type="text" name="precio" id="precio" placeholder="Precio">
+    <input type="text" name="thumbnail" id="thumbnail" placeholder="Link Thumbnail">
+    
+    <input type="submit" value="Cargar producto" class="submit" />
+  </form>
+
+  <form action="/api/producto/:id" enctype="" method="GET">
+    <input type="text" name="buscarid" id="buscarid" placeholder="Inserte ID para buscar">
+    <input type="submit" value="Buscar" class="submit" />
+  </form>
+  <form action="/api/productos" enctype="multipart/form-data" method="GET">
+    <input type="submit" value="Traer Productos" class="submit" />
+  </form>
+  <form action="/api/producto" enctype="" method="DELETE">
+    <input type="text" name="eliminarid" id="eliminarid" placeholder="Inserte ID a eliminar">
+    <input type="submit" value="Eliminar" class="submit" />
+  </form>
+
+</body>
+
+</html>
